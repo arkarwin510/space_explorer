@@ -1,0 +1,17 @@
+<div *ngIf="apod">
+    <h2>{{ apod.title }}</h2>
+    <p>{{ apod.date }}</p>
+  
+    <div *ngIf="apod.media_type === 'image'">
+      <img [src]="apod.url" alt="NASA Image of the Day" width="600">
+    </div>
+    <div *ngIf="apod.media_type === 'video'">
+      <iframe [src]="apod.url" width="600" height="400"></iframe>
+    </div>
+  
+    <p>{{ apod.explanation }}</p>
+</div>
+  
+<label>Date: <input type="date" [(ngModel)]="selectedDate" /></label>
+<button (click)="getApod()">Fetch</button>
+  
