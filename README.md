@@ -68,3 +68,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - NASA APOD API (https://api.nasa.gov/)
 - Angular CLI (https://github.com/angular/angular-cli)
+
+## Contributing
+
+arkarwin156439@gmail.com
