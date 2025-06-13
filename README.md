@@ -1,59 +1,74 @@
-# SpaceExplorer
+# Space Explorer
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.0.
+A web application that allows users to explore space-related content using NASA's Astronomy Picture of the Day (APOD) API.
 
-## Development server
+## Features
 
-To start a local development server, run:
+- View daily astronomy pictures from NASA
+- Browse historical astronomy pictures by date
+- Get detailed information about each picture including title, description, and copyright information
+- Built with Angular and integrated with NASA's APOD API
 
-```bash
-ng serve
-```
+## Setup Instructions
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Create a `.env` file in the root directory and add your NASA API key:
+   ```bash
+   API_KEY=your_nasa_api_key_here
+   ```
+4. Start the development server:
+   ```bash
+   ng serve
+   ```
+5. Open your browser and navigate to `http://localhost:4200/`
 
-## Code scaffolding
+## Project Structure
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- `src/app/core/config/` - Configuration services
+- `src/app/core/services/` - Core service implementations (including NASA API integration)
+- `src/environments/` - Environment-specific configuration files
 
-```bash
-ng generate component component-name
-```
+## Development
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Development Server
 
-```bash
-ng generate --help
-```
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Building
+### Code Generation
 
-To build the project run:
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-```bash
-ng build
-```
+### Building
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+### Running Tests
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-```bash
-ng test
-```
+## API Integration
 
-## Running end-to-end tests
+The application uses NASA's APOD API to fetch daily astronomy pictures. Make sure to obtain an API key from NASA before running the application.
 
-For end-to-end (e2e) testing, run:
+## Environment Configuration
 
-```bash
-ng e2e
-```
+The project supports different environments through the environment files:
+- `environment.ts` - Development environment
+- `environment.prod.ts` - Production environment
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## License
 
-## Additional Resources
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Acknowledgments
+
+- NASA APOD API (https://api.nasa.gov/)
+- Angular CLI (https://github.com/angular/angular-cli)
+
+## Contributing
+
+arkarwin156439@gmail.com

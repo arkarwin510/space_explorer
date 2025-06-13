@@ -1,0 +1,25 @@
+:host {
+  display: block;
+  padding: 1rem;
+}
+
+.astronomy-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.astronomy-image {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+}
+
+.astronomy-description {
+  margin: 1rem 0;
+  line-height: 1.6;
+}
+
+.astronomy-date {
+  font-style: italic;
+  color: #666;
+}
